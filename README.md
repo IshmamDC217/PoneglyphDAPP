@@ -1,1 +1,3 @@
-"# PoneglyphDAPP" 
+# PoneglyphDAPP 
+
+The Voting System Smart Contract is a decentralized application (DApp) built on the Ethereum blockchain that enables transparent and secure voting for various purposes. Using this system, users can cast their votes for their favorite One Piece character, ensuring a fair and reliable voting process. Each candidate, representing a One Piece character, is assigned a unique ID, and the vote count for each candidate is tracked on the blockchain. The decentralized nature of the system ensures transparency and prevents tampering, providing an efficient solution for conducting a trustworthy and engaging One Piece character voting event.
