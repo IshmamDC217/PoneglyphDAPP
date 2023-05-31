@@ -67,7 +67,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "candidatesCount",
+				"name": "candidatesTotal",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -120,11 +120,11 @@
 	},
 	"sources": {
 		"poneglyph.sol": {
-			"keccak256": "0x6473e957bbb70dfe4fa06ab148f40496db2679274670c947a7d3ccb7a7d2b76e",
+			"keccak256": "0xf4126c8ebd932caa6922f1874366a328762f3c600d0a0d014f4f7a4fb34fe723",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://732bb3f8a4adf92fac9e76c4090e10861b3af10f20b4c37bd2ba3b3c5db6c268",
-				"dweb:/ipfs/QmUQsHf5gWWnUG5rQubmBP8cihiKY58PbxX7n7um6r1UqT"
+				"bzz-raw://27d04faa06bd9c898103d5073dfeafcf5fdea5db8d63ba166fcd661851ffa39e",
+				"dweb:/ipfs/QmZy69witJvtDjHtTanu4zRgxh93P9wTGCRJNKxfr5m8UY"
 			]
 		}
 	},
