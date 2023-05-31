@@ -13,7 +13,7 @@ contract VotingSystem {
     mapping(uint => Candidate) public candidates;
 
     // Total number of candidates
-    uint public candidatesCount;
+    uint public candidatesTotal;
 
     // Event to broadcast the occurrence of a vote
     event Vote(uint indexed candidateId);
@@ -27,13 +27,13 @@ contract VotingSystem {
 
     // Function to add a new candidate
     function addCandidate(string memory _name) public {
-        candidatesCount++;                                      // Increment the candidates count
-        candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);    // Create a new candidate and store it in the mapping
+        candidatesTotal++;                                      // Increment the candidates count
+        candidates[candidatesTotal] = Candidate(candidatesTotal, _name, 0);    // Create a new candidate and store it in the mapping
     }
 
     // Function to cast a vote for a candidate
     function vote(uint _candidateId) public {
-        require(_candidateId > 0 && _candidateId <= candidatesCount, "Invalid candidate");   // Validate the candidate ID
+        require(_candidateId > 0 && _candidateId <= candidatesTotal, "Invalid candidate");   // Validate the candidate ID
         candidates[_candidateId].voteCount++;            // Increment the vote count for the candidate
         emit Vote(_candidateId);                         // Emit the Vote event to indicate a vote has been cast
     }
