@@ -20,7 +20,7 @@ contract VotingSystem {
 
     // Constructor function that is executed when the contract is deployed
     constructor() {
-        // Initialize the contract with two default candidates
+        // Initialize the contract with two default candidates (all actual candidates start from 2 onwards, from 3)
         addCandidate("Candidate 1");
         addCandidate("Candidate 2");
     }
