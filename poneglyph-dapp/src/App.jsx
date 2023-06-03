@@ -70,33 +70,35 @@ function App() {
   }
 
   return (
-    <div className="container mx-auto max-w-lg mt-10 px-4 py-6 bg-white rounded shadow-xl">
-      <h1 className="text-4xl font-bold text-center mb-4">One Piece Voting System</h1>
+    <section className='mainpage'>
+      <div className="container mx-auto max-w-lg mt-10 px-4 py-6 bg-white rounded shadow-xl">
+        <h1 className="text-4xl font-bold text-center mb-4">One Piece Voting System</h1>
 
-      <form id="addCandidateForm" className="mb-4" onSubmit={handleSubmitCandidate}>
-        <label htmlFor="candidateName" className="text-lg">Candidate Name:</label><br />
-        <input type="text" id="candidateName" name="candidateName" className="mt-2 mb-4 px-4 py-2 border rounded-md" required /><br />
-        <input type="submit" value="Add Candidate" className="px-8 py-2 text-white bg-blue-500 rounded hover:bg-blue-600" />
-      </form>
+        <form id="addCandidateForm" className="mb-4" onSubmit={handleSubmitCandidate}>
+          <label htmlFor="candidateName" className="text-lg">Candidate Name:</label><br />
+          <input type="text" id="candidateName" name="candidateName" className="mt-2 mb-4 px-4 py-2 border rounded-md" required /><br />
+          <input type="submit" value="Add Candidate" className="px-8 py-2 text-white bg-blue-500 rounded hover:bg-blue-600" />
+        </form>
 
-      <hr className="mb-4" />
+        <hr className="mb-4" />
 
-      <form id="voteForm" className="mb-4" onSubmit={handleSubmitVote}>
-        <label htmlFor="candidateId" className="text-lg">Candidate ID:</label><br />
-        <input type="number" id="candidateId" name="candidateId" className="mt-2 mb-4 px-4 py-2 border rounded-md" required /><br />
-        <input type="submit" value="Vote"
-          className="px-8 py-2 text-white bg-green-500 rounded hover:bg-green-600" />
-      </form>
-      <div id="candidatesList" className="mt-6">
-        {candidates.map(candidate => (
-          <div key={candidate.id}>
-            <h2 className="text-lg font-bold">{candidate.name}</h2>
-            <p>Vote Count: {candidate.voteCount}</p>
-            <hr />
-          </div>
-        ))}
+        <form id="voteForm" className="mb-4" onSubmit={handleSubmitVote}>
+          <label htmlFor="candidateId" className="text-lg">Candidate ID:</label><br />
+          <input type="number" id="candidateId" name="candidateId" className="mt-2 mb-4 px-4 py-2 border rounded-md" required /><br />
+          <input type="submit" value="Vote"
+            className="px-8 py-2 text-white bg-green-500 rounded hover:bg-green-600" />
+        </form>
+        <div id="candidatesList" className="mt-6">
+          {candidates.map(candidate => (
+            <div key={candidate.id}>
+              <h2 className="text-lg font-bold">{candidate.name}</h2>
+              <p>Vote Count: {candidate.voteCount}</p>
+              <hr />
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
