@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mainpage {
+    background-image: url('../public/homepage.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html,
+body {
+  font-size: medium;
+}
+
+
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+/* 
+.glasscontainer {
+    background-color: rgba(81, 138, 213, 0.309);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 0%;
+    color: rgb(0, 0, 0);
+    border-radius: 10%;
+  } */
