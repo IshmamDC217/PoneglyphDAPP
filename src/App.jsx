@@ -72,7 +72,7 @@ function App() {
   return (
     <section className='mainpage'>
       <div className="container glasscontainer mx-auto max-w-lg mt-10 px-4 py-6 bg-white rounded shadow-xl">
-        <h1 className="text-4xl font-bold text-center mb-4">One Piece Voting System</h1>
+        <h1 className="text-4xl font-bold text-white mb-4">One Piece Voting System</h1>
 
         <form id="addCandidateForm" className="mb-4" onSubmit={handleSubmitCandidate}>
           <label htmlFor="candidateName" className="text-lg">Candidate Name:</label><br />
